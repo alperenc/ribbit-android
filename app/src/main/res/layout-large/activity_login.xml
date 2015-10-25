@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AuthBackground"
+    tools:context="com.alperencan.ribbitapp.ui.LoginActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:contentDescription="@string/content_desc_background"
+        style="@style/AuthBackgroundImage" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="180dp"
+        style="@style/AuthTitle"/>
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true"
+        style="@style/AuthFieldContainer" >
+
+        <EditText
+            android:id="@+id/usernameField"
+            android:hint="@string/username_hint"
+            style="@style/AuthEditText">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:inputType="textPassword"
+            android:hint="@string/password_hint"
+            style="@style/AuthEditText"/>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:text="@string/login_button_label"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true"
+        style="@style/AuthButton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_text"
+        android:id="@+id/signUpText"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
